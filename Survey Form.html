@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: tomato;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  background-color: #
+
+      </style>
+    <header>
+      <h1 id="title">Survey Form</h1>
+    </header>
+    <main>
+      <p id="description">Please fill out this survey form.</p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" name="age" min="18" max="100" placeholder="Enter your age" required>
+
+        <label for="dropdown">Select your gender:</label>
+        <select id="dropdown" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <fieldset>
+          <legend>Do you own any pets?</legend>
+          <input type="radio" id="yes-pets" name="pets" value="yes" required>
+          <label for="yes-pets">Yes</label>
+          <input type="radio" id="no-pets" name="pets" value="no">
+          <label for="no-pets">No</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What type of pets do you own?</legend>
+          <input type="checkbox" id="dog" name="pet-type" value="dog">
+          <label for="dog">Dog</label>
+          <input type="checkbox" id="cat" name="pet-type" value="cat">
+          <label for="cat">Cat</label>
+          <input type="checkbox" id="other-pet" name="pet-type" value="other">
+          <label for="other-pet">Other</label>
+        </fieldset>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
